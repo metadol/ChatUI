@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.chat-header {
+    background: linear-gradient(to right,#6c54b0 , #e9895e);
+    background-clip: text;
+    color: transparent;
+    
+  }
+
+.bgradient{
+    background: linear-gradient(to right,#e9895e,#6c54b0 );
+    padding: .4px 1px 1px .9px;
+}
+
+.mgradient{
+    background: linear-gradient(to bottom,#6c54b0 , #e9895e);
+    padding: 2px 2.3px 2.5px 2px;
+}
+
