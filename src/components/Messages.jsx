@@ -6,8 +6,8 @@ export const OutgoingMessage = ({ sender, message }) => (
         <div className='flex items-center gap-2'>
             <span className='text-sm text-gray-400'>Just Now</span>
             <div className='flex items-center gap-1'>
-                <span className='font-medium'>{sender.name}</span>
-                <img src={sender.image} className='object-cover rounded-full w-7 h-7' />
+                <span className='font-medium'>You</span>
+                <img src='/an.jpg' className='object-cover rounded-full w-7 h-7' />
             </div>
         </div>
         <div className='py-2.5 pl-4 bg-[#e5e4e9] pr-7 rounded-l-xl rounded-br-xl'>
@@ -17,12 +17,13 @@ export const OutgoingMessage = ({ sender, message }) => (
 );
 
 
-export const IncomingMessage = ({ sender, message }) => (
+export const IncomingMessage = ({ message }) => (
+  <div className='flex flex-col items-start w-full gap-2'>
     <div className='flex flex-col items-start w-full gap-1'>
         <div className='flex items-center gap-2'>
             <div className='flex items-center gap-1'>
-                <img src={sender.image} className='object-cover rounded-full w-7 h-7' />
-                <span className='font-medium'>{sender.name}</span>
+                <img src='/l2.png' className='object-cover rounded-full w-7 h-7' />
+                <span className='font-medium'>Copilot</span>
             </div>
             <span className='text-sm text-gray-400'>Just Now</span>
         </div>
@@ -32,6 +33,7 @@ export const IncomingMessage = ({ sender, message }) => (
             </div>
         </div>
     </div>
+   </div>
 );
 
 
@@ -49,6 +51,7 @@ export const Answerone = ({ message }) => (
             </div>
         </div>
     </div>
+    
 )
 
 export const Answertwo = ({kub,mess,image}) => (
